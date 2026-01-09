@@ -1,0 +1,14 @@
+{
+  "python.defaultInterpreterPath": "venv/bin/python",
+
+  "code-runner.executorMap": {
+    "python": "$pythonPath -u src/$fileName",
+  "cpp": "clang++ -std=c++20 -I$workspaceRoot/include $fullFileName -o /tmp/$fileNameWithoutExt && /tmp/$fileNameWithoutExt"
+  },
+  "code-runner.runInTerminal": true,
+
+  "java.enabled": false,
+
+  "cmake.configurePreset": "clang-debug",
+  "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools"
+}
